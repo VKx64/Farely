@@ -1,0 +1,16 @@
+name: Enforce PR from Staging
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [ main ]
+
+jobs:
+  check-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if source branch is staging
+        if: github.head_ref != 'staging'
+        run: |
+          echo "Error: Pull requests to main can only be made from the staging branch."
+          exit 1
