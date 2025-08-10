@@ -8,7 +8,19 @@ module.exports = {
   ],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+        primary_text: 'var(--color-primary_text)',
+      },
+      fontFamily: {
+        roboto: ["Roboto_400Regular"],
+        robotobold: ["Roboto_700Bold"],
+        quicksand: ["Quicksand_400Regular"],
+        quicksandbold: ["Quicksand_700Bold"],
+      }
+    },
   },
   plugins: [],
 }
