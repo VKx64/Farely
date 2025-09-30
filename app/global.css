@@ -125,3 +125,28 @@ main[id],
 div[id] {
   scroll-margin-top: 4rem; /* 64px to account for navigation height */
 }
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px; /* vertical scrollbar thickness */
+  height: 6px; /* horizontal scrollbar thickness */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* light gray track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #84beff; /* consistent scrollbar handle */
+  border-radius: 9999px; /* pill shape */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5aa7ff; /* slightly darker on hover */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin; /* makes scrollbar thin */
+  scrollbar-color: #84beff #f1f1f1; /* thumb color | track color */
+}
