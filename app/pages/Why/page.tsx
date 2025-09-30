@@ -2,16 +2,16 @@ import React from "react";
 
 const Why = () => {
   return (
-    <main className="min-h-screen w-full bg-white flex flex-col items-center justify-center text-white text-center p-8">
+    <main className="min-h-screen w-full bg-white flex flex-col items-center justify-center text-white text-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 py-8">
       <h3 className="text-5xl font-bold mb-4 text-[var(--main-text)]">
         Why Choose Farely?
       </h3>
       <p className="text-2xl max-w-3xl text-[var(--main-text)]">
         Experience the safest and smartest ride-sharing platform.
       </p>
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12 max-w-7xl w-full">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12 max-w-7xl w-full">
         {/* Plate Scanner Card */}
-        <div className="bg-[var(--card)] backdrop-blur-sm rounded-2xl p-8 ">
+        <div className="bg-[var(--card)] backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-10 ">
           <div className="bg-[var(--cta)] w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
             <svg
               className="w-8 h-8 text-white"
@@ -32,7 +32,7 @@ const Why = () => {
         </div>
 
         {/* Auto Reporting Card */}
-        <div className="bg-[var(--card)] backdrop-blur-sm rounded-2xl p-8 ">
+        <div className="bg-[var(--card)] backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-10 ">
           <div className="bg-[var(--cta)] w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
             <svg
               className="w-8 h-8 text-white"
@@ -53,7 +53,7 @@ const Why = () => {
         </div>
 
         {/* Smart Radar Card */}
-        <div className="bg-[var(--card)] backdrop-blur-sm rounded-2xl p-8">
+        <div className="bg-[var(--card)] backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-10">
           <div className="bg-[var(--cta)] w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
             <svg
               className="w-8 h-8 text-white"

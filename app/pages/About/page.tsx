@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="min-h-screen w-full bg-[var(--card)] flex flex-col items-center justify-center p-8"
+      className="min-h-screen w-full bg-[var(--card)] flex flex-col items-center justify-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 py-8"
     >
       <div className="text-center mb-16">
         <h1 className="text-[var(--main-text)] text-5xl font-bold mb-4">
@@ -18,7 +18,7 @@ const About = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl w-full mt-16">
         {/* For Passengers Column */}
-        <div className="bg-white rounded-2xl p-8 shadow-xl">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-xl">
           <div className="flex items-center gap-3 mb-12">
             <div className="bg-[var(--cta)] w-10 h-10 rounded-full flex items-center justify-center">
               <svg
@@ -83,7 +83,7 @@ const About = () => {
         </div>
 
         {/* For Drivers Column */}
-        <div className="bg-white rounded-2xl p-8 shadow-xl">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-xl">
           <div className="flex items-center gap-3 mb-12">
             <div className="bg-[var(--cta)] w-10 h-10 rounded-full flex items-center justify-center">
               <svg

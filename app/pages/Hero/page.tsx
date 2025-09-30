@@ -4,21 +4,27 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <main id="home" className="min-h-screen w-full max-w-full flex flex-col lg:flex-row overflow-x-hidden">
-      <section className="w-full lg:w-1/2 bg-[var(--cta)] flex items-center justify-center px-4 py-8 lg:py-0">
-        <div className="text-white w-full max-w-2xl lg:px-12 px-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 lg:mb-8 text-left leading-tight">
-            Safe & Smart Ride <br className="hidden sm:block" /> Sharing Platform
+    <main
+      id="home"
+      className="min-h-screen w-full max-w-full flex flex-col lg:flex-row overflow-x-hidden"
+    >
+      <section className="w-full lg:w-1/2 bg-[var(--cta)] flex items-center justify-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 py-8 lg:py-12 xl:py-0">
+        <div className="text-white w-full max-w-2xl">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4 md:mb-6 lg:mb-6 xl:mb-8 text-left leading-tight">
+            Safe & Smart Ride <br className="hidden sm:block" /> Sharing
+            Platform
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-left mb-6 lg:mb-8">
-            Experience the future of transportation <br className="hidden md:block" /> with plate scanning,
-            automatic reporting, <br className="hidden md:block" /> and real-time passenger discovery.
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-3xl 2xl:text-4xl text-left mb-6 lg:mb-6 xl:mb-8 leading-relaxed">
+            Experience the future of transportation{" "}
+            <br className="hidden md:block" /> with plate scanning, automatic
+            reporting, <br className="hidden md:block" /> and real-time
+            passenger discovery.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 mt-6 lg:mt-8">
-            <button className="flex font-poppins items-center justify-center cursor-pointer gap-3 lg:gap-4 bg-white hover:bg-[var(--cta)] border border-transparent hover:border-white hover:text-white text-[var(--cta)] px-6 lg:px-8 py-3 lg:py-4 rounded-xl transition-colors duration-200 font-semibold text-base lg:text-lg">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 lg:gap-4 xl:gap-6 mt-6 lg:mt-6 xl:mt-8">
+            <button className="flex font-poppins items-center justify-center cursor-pointer gap-2 md:gap-3 lg:gap-3 xl:gap-4 bg-white hover:bg-[var(--cta)] border border-transparent hover:border-white hover:text-white text-[var(--cta)] px-5 md:px-6 lg:px-3 xl:px-8 py-3 lg:py-3 xl:py-4 rounded-xl transition-colors duration-200 font-semibold text-sm md:text-base lg:text-base xl:text-lg">
               {/* Apple Icon */}
               <svg
-                className="w-6 h-6 lg:w-8 lg:h-8 flex-shrink-0"
+                className="w-5 h-5 md:w-6 md:h-6 lg:w-6 lg:h-6 xl:w-8 xl:h-8 flex-shrink-0"
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
@@ -27,10 +33,10 @@ const Hero = () => {
               </svg>
               <span className="whitespace-nowrap">Download for iOS</span>
             </button>
-            <button className="flex font-poppins cursor-pointer items-center justify-center gap-3 lg:gap-4 bg-[var(--cta)] border border-white hover:bg-white hover:text-[var(--cta)] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-xl transition-colors duration-200 font-semibold text-base lg:text-lg">
+            <button className="flex font-poppins cursor-pointer items-center justify-center gap-2 md:gap-3 lg:gap-3 xl:gap-4 bg-[var(--cta)] border border-white hover:bg-white hover:text-[var(--cta)] text-white px-5 md:px-6 lg:px-3 xl:px-8 py-3 lg:py-3 xl:py-4 rounded-xl transition-colors duration-200 font-semibold text-sm md:text-base lg:text-base xl:text-lg">
               {/* Google Play Icon */}
               <svg
-                className="w-6 h-6 lg:w-8 lg:h-8 flex-shrink-0"
+                className="w-5 h-5 md:w-6 md:h-6 lg:w-6 lg:h-6 xl:w-8 xl:h-8 flex-shrink-0"
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,14 +48,14 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <section className="w-full lg:w-1/2 bg-[var(--cta)] flex items-center justify-center px-4 py-8 lg:py-0">
-        <div className="flex items-center justify-center w-full max-w-lg lg:max-w-2xl xl:max-w-4xl">
+      <section className="w-full lg:w-1/2 bg-[var(--cta)] flex items-center justify-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 py-8 lg:py-12 xl:py-0">
+        <div className="flex items-center justify-center w-full max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl">
           <Image
             src="/images/Phone-mockup.svg"
             alt="Phone mockup showing Farely app interface"
             width={1000}
             height={1000}
-            className="w-full h-auto max-w-md lg:max-w-lg xl:max-w-2xl"
+            className="w-full h-auto"
             priority
           />
         </div>
