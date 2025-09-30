@@ -17,48 +17,57 @@ const Safety = () => {
           </h2>
 
           <ul className="space-y-8 lg:space-y-10">
+            {/* Item 1 */}
             <li className="flex items-start space-x-4 lg:space-x-5">
-              <Icon
-                icon="mdi:alert-circle-outline"
-                className="text-red-500 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 flex-shrink-0 mt-1"
-              />
+              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl bg-red-100 flex-shrink-0">
+                <Icon
+                  icon="mdi:alert-circle-outline"
+                  className="text-red-500 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
+                />
+              </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-bold text-lg sm:text-xl lg:text-xl xl:text-2xl text-gray-900 mb-2 leading-tight">
+                <h3 className="font-bold text-lg sm:text-xl lg:text-xl xl:text-2xl text-[var(--main-text)] mb-2 leading-tight">
                   Automatic Harassment Detection
                 </h3>
-                <p className="text-gray-600 text-sm sm:text-base lg:text-base xl:text-lg leading-relaxed">
+                <p className="text-[var(--desc)] font-semibold text-sm sm:text-base lg:text-base xl:text-lg leading-relaxed">
                   AI-powered system monitors rides and automatically reports
                   suspicious behavior
                 </p>
               </div>
             </li>
 
+            {/* Item 2 */}
             <li className="flex items-start space-x-4 lg:space-x-5">
-              <Icon
-                icon="mdi:car-info"
-                className="text-blue-500 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 flex-shrink-0 mt-1"
-              />
+              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl bg-blue-100 flex-shrink-0">
+                <Icon
+                  icon="mdi:car-info"
+                  className="text-blue-500 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
+                />
+              </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-bold text-lg sm:text-xl lg:text-xl xl:text-2xl text-gray-900 mb-2 leading-tight">
+                <h3 className="font-bold text-lg sm:text-xl lg:text-xl xl:text-2xl text-[var(--main-text)] mb-2 leading-tight">
                   Plate Verification System
                 </h3>
-                <p className="text-gray-600 text-sm sm:text-base lg:text-base xl:text-lg leading-relaxed">
+                <p className="text-[var(--desc)] font-semibold text-sm sm:text-base lg:text-base xl:text-lg leading-relaxed">
                   Scan and verify vehicle plates for enhanced security and
                   tracking
                 </p>
               </div>
             </li>
 
+            {/* Item 3 */}
             <li className="flex items-start space-x-4 lg:space-x-5">
-              <Icon
-                icon="mdi:phone-in-talk"
-                className="text-green-500 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 flex-shrink-0 mt-1"
-              />
+              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl bg-green-100 flex-shrink-0">
+                <Icon
+                  icon="mdi:phone-in-talk"
+                  className="text-green-500 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
+                />
+              </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-bold text-lg sm:text-xl lg:text-xl xl:text-2xl text-gray-900 mb-2 leading-tight">
+                <h3 className="font-bold text-lg sm:text-xl lg:text-xl xl:text-2xl text-[var(--main-text)] mb-2 leading-tight">
                   24/7 Emergency Support
                 </h3>
-                <p className="text-gray-600 text-sm sm:text-base lg:text-base xl:text-lg leading-relaxed">
+                <p className="text-[var(--desc)] font-semibold text-sm sm:text-base lg:text-base xl:text-lg leading-relaxed">
                   Round-the-clock support team ready to assist in any emergency
                   situation
                 </p>

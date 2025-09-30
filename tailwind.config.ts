@@ -12,6 +12,7 @@ const config: Config = {
         cta: "var(--cta)",
         text: "var(--main-text)",
         card: "var(--card)",
+        desc: "var(--desc)",
       },
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"],

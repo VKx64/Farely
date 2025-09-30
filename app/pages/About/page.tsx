@@ -44,7 +44,7 @@ const About = () => {
                 <h3 className="font-bold text-[var(--main-text)] mb-2">
                   Book Your Ride
                 </h3>
-                <p className="text-gray-600 font-semibold">
+                <p className="text-[var(--desc)] font-semibold">
                   Request a driver or join any available vehicle
                 </p>
               </div>
@@ -59,7 +59,7 @@ const About = () => {
                 <h3 className="font-bold text-[var(--main-text)] mb-2">
                   Scan Plate Number
                 </h3>
-                <p className="text-gray-600 font-semibold">
+                <p className="text-[var(--desc)] font-semibold">
                   Verify vehicle safety by scanning the license plate
                 </p>
               </div>
@@ -74,7 +74,7 @@ const About = () => {
                 <h3 className="font-bold text-[var(--main-text)] mb-2">
                   Safe Journey
                 </h3>
-                <p className="text-gray-600 font-semibold">
+                <p className="text-[var(--desc)] font-semibold">
                   Enjoy your ride with automatic safety monitoring
                 </p>
               </div>
@@ -109,7 +109,7 @@ const About = () => {
                 <h3 className="font-bold text-[var(--main-text)] mb-2">
                   Open the Map
                 </h3>
-                <p className="text-gray-600 font-semibold">
+                <p className="text-[var(--desc)] font-semibold">
                   View available passengers in your area
                 </p>
               </div>
@@ -124,7 +124,7 @@ const About = () => {
                 <h3 className="font-bold text-[var(--main-text)] mb-2">
                   Use Smart Radar
                 </h3>
-                <p className="text-gray-600 font-semibold">
+                <p className="text-[var(--desc)] font-semibold">
                   Click radar to see top 3 nearest passengers
                 </p>
               </div>
@@ -139,7 +139,7 @@ const About = () => {
                 <h3 className="font-bold text-[var(--main-text)] mb-2">
                   Pick Up & Earn
                 </h3>
-                <p className="text-gray-600 font-semibold">
+                <p className="text-[var(--desc)] font-semibold">
                   Connect with passengers and start earning
                 </p>
               </div>

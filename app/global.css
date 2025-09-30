@@ -3,7 +3,8 @@
 :root {
   --cta: #84beff;
   --main-text: #111827;
-  --card: #EDF2F7;
+  --card: #edf2f7;
+  --desc: #4b5563;
 }
 
 .dark {
