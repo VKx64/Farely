@@ -29,7 +29,7 @@ const Safety = () => {
                 <h3 className="font-bold text-lg sm:text-xl lg:text-xl xl:text-2xl text-[var(--main-text)] mb-2 leading-tight">
                   Automatic Harassment Detection
                 </h3>
-                <p className="text-[var(--desc)] font-semibold text-sm sm:text-base lg:text-base xl:text-lg leading-relaxed">
+                <p className="text-[var(--desc)] whitespace-nowrap font-semibold text-sm sm:text-base lg:text-base xl:text-lg leading-relaxed">
                   AI-powered system monitors rides and automatically reports
                   suspicious behavior
                 </p>

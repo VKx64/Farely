@@ -17,6 +17,7 @@ html {
   overflow-x: hidden;
   max-width: 100vw;
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -28,6 +29,26 @@ body {
   max-width: 100vw;
   height: 100%;
   min-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
+}
+
+/* Create a custom scrollbar indicator */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 3px;
+  width: 6px;
+  height: 100vh;
+  background: transparent;
+  pointer-events: none;
+  z-index: 10000;
 }
 
 @layer base {
@@ -127,14 +148,14 @@ div[id] {
   scroll-margin-top: 4rem; /* 64px to account for navigation height */
 }
 
-/* Chrome, Edge, Safari */
+/* Chrome, Edge, Safari - Complete scrollbar customization */
 ::-webkit-scrollbar {
   width: 6px; /* vertical scrollbar thickness */
   height: 6px; /* horizontal scrollbar thickness */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* light gray track */
+  background: transparent; /* light gray track */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -146,8 +167,28 @@ div[id] {
   background: #5aa7ff; /* slightly darker on hover */
 }
 
+/* Remove scrollbar buttons/arrows completely */
+::-webkit-scrollbar-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Remove corner piece between horizontal and vertical scrollbars */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 /* Firefox */
 * {
   scrollbar-width: thin; /* makes scrollbar thin */
-  scrollbar-color: #84beff #f1f1f1; /* thumb color | track color */
+  scrollbar-color: #84beff transparent; /* thumb color | track color */
 }

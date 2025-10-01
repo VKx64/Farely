@@ -52,7 +52,7 @@ const Navigation = () => {
     <nav
       role="navigation"
       aria-label="Main navigation"
-      className="sticky top-0 z-50 h-16 w-full border-b border-gray-100 bg-white"
+      className="sticky top-0 z-[9999] h-16 w-full border-b border-gray-100 bg-white"
     >
       <div className="mx-auto flex h-16 max-w-[1700px] items-center justify-between px-4 sm:px-6 lg:px-6 xl:px-8 ml-2 md:ml-6 lg:ml-10 xl:ml-17">
         {/* Logo */}
