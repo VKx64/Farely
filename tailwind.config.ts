@@ -13,6 +13,7 @@ const config: Config = {
         text: "var(--main-text)",
         card: "var(--card)",
         desc: "var(--desc)",
+        footer: "var(--footer)",
       },
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"],
